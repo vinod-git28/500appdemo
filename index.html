@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Fortune</title>
+</head>
+
+<body>
+    <div class="container-fluid body-mask">
+        <div class="row bg-white" id="sidenav">
+            <div class="col-md-12">
+                <a href="#" id="menu-collapse" class="bg-white p-1 rounded">
+                    <span class="material-icons text-primary">
+                        keyboard_arrow_right
+                    </span>
+                </a>
+                   <div class="card border-0 mb-3 mt-2 w-100">
+                                        <div class="table-responsive">
+                                            <table id="myTable" class="table table-bordered" cellspacing="0" width="100%">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                      
+                                                        <th onclick="sortTable(0)">Tasks</th>
+                                                        <th onclick="sortTable(1)">Owner</th>
+                                                        <th onclick="sortTable(2)">Due Date</th>
+                                                        <th onclick="sortTable(3)">Priority</th>
+                                                        <th onclick="sortTable(4)">Status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="7">
+                                                            <div class="d-flex">
+                                                                <h4 class="mr-auto text-dark">Group 1</h4>
+                                                                <h5 class="text-primary">+ Add Task</h5>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                       
+                                                        <td>Filters Issue Fixing</td>
+                                                        <td>Carl Webb</td>
+                                                        <td>September 03, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Medium
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Ongoing
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            Date picker issues</td>
+                                                        <td>Maria Cruz</td>
+                                                        <td>September 12, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-warning d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                High
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-warning d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Overdue
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            UI issues fixing</td>
+                                                        <td>Karen Jackson</td>
+                                                        <td>September 23, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-secondary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Low
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-success d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Completed
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="7">
+                                                            <div class="d-flex">
+                                                                <h4 class="mr-auto text-dark">Group 2</h4>
+                                                                <h5 class="text-primary">+ Add Task</h5>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>Paytm Payment Process</td>
+                                                        <td>Julie Fisher</td>
+                                                        <td>December 03, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-secondary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Low
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-warning d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Overdue
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                       
+                                                        <td>Paytm Payment Process</td>
+                                                        <td>Emma Oliver</td>
+                                                        <td>December 21, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Medium
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Ongoing
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div id="wrapper">
+                <!-- sidenav -->
+                <div id="sidebar-wrapper" class="bg-primary">
+                    <aside class="position-relative">
+                        <div class="toggle-wrap bg-primary rounded pt-4">
+                            <div class="d-flex p-2 justify-content-between">
+                                <a href="#" class="brand pl-4">
+                                    <div class="d-flex">
+                                        <div><img class="img-fluid" src="images/logo.png" alt="" /></div>
+                                        <h5 class="pl-2 text-white">Projects<br /> Jhonson
+                                        </h5>
+                                    </div>
+                                </a>
+                                <div class="ml-4 mr-3 mb-4"> <span class="material-icons position-relative text-white" id="menu-toggle">
+                                        menu
+                                    </span></div>
+                            </div>
+                            <!-- search -->
+                            <div class="m-4  w-80"><input type="text" placeholder="Search for reports" class="form-control mb-2 p-3 h-75" name=""></div>
+                            <ul class="list-unstyled pl-4 pr-4 ml-2 mt-5 mb-4 mr-2 text-white">
+                                <li class="mb-3">
+                                    <a data-toggle="collapse" href="#multiCollapseExample1">
+                                        <div class="d-flex">
+                                            <h5 class="custom-text text-uppercase mr-auto text-white">Favorites</h5>
+                                            <span class="material-icons ">
+                                                add_circle_outline
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <ul class="list-unstyled collapse multi-collapse show" id="multiCollapseExample1">
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/blue-icon.jpg" alt=""></span> Push.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/green-icon.jpg" alt=""></span> Schedule.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/purple-icon.jpg" alt=""></span> Track.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled pl-4 pr-4 ml-2 mt-5 mb-4 mr-2 text-white">
+                                <li class="mb-3">
+                                    <a data-toggle="collapse" href="#multiCollapseExample1">
+                                        <div class="d-flex">
+                                            <h5 class="custom-text text-uppercase mr-auto text-white">Projects</h5>
+                                            <span class="material-icons ">
+                                                add_circle_outline
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <ul class="list-unstyled collapse multi-collapse show" id="multiCollapseExample1">
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/blue-icon.jpg" alt=""></span> Push.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/green-icon.jpg" alt=""></span> Schedule.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/purple-icon.jpg" alt=""></span> Track.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/orange-icon.jpg" alt=""></span> User tracker
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/blue-icon.jpg" alt=""></span> Push.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/green-icon.jpg" alt=""></span> Schedule.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/purple-icon.jpg" alt=""></span> Track.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/orange-icon.jpg" alt=""></span> User tracker
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled pl-4 pr-4 ml-2 mt-5 mb-4 mr-2 text-white">
+                                <li class="mb-3">
+                                    <a data-toggle="collapse" href="#multiCollapseExample1">
+                                        <div class="d-flex">
+                                            <h5 class="custom-text text-uppercase mr-auto text-white">Archived</h5>
+                                            <span class="material-icons ">
+                                                add_circle_outline
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <ul class="list-unstyled collapse multi-collapse show" id="multiCollapseExample1">
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/blue-icon.jpg" alt=""></span> Push.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                        <li class="mt-2"><a class="d-flex pt-2 pb-2" href="#">
+                                                <div class="mr-auto">
+                                                    <span class="mr-2 pr-2"><img src="images/green-icon.jpg" alt=""></span> Schedule.ly
+                                                </div>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-12 col-md-12 col-xs-10">
+                    <div class="mb-3">
+                        <div class="pt-3 pb-2">
+                            <div class="d-flex">
+                                <div class="mr-auto">
+                                    <ul class="nav latest-nav" id="myTab" role="tablist">
+                                        <li class="nav-item ml-2">
+                                            <a class="nav-link active text-dark p-1" id="home-tab" data-toggle="tab" href="#tasks" role="tab" aria-controls="home" aria-selected="true">Tasks (25)</a>
+                                        </li>
+                                        <li class="nav-item ml-2">
+                                            <a class="nav-link text-dark p-1" id="profile-tab" data-toggle="tab" href="#discussions" role="tab" aria-controls="profile" aria-selected="false">Discussions (11)</a>
+                                        </li>
+                                        <li class="nav-item ml-2">
+                                            <a class="nav-link text-dark p-1" id="contact-tab" data-toggle="tab" href="#files" role="tab" aria-controls="contact" aria-selected="false">Files (12)</a>
+                                        </li>
+                                        <li class="nav-item ml-2">
+                                            <a class="nav-link text-dark p-1" id="mile-tab" data-toggle="tab" href="#milestones" role="tab" aria-controls="contact" aria-selected="false">Milestones (08)</a>
+                                        </li>
+                                        <li class="nav-item ml-2">
+                                            <a class="nav-link text-dark p-1" id="mile-tab" data-toggle="tab" href="#activity" role="tab" aria-controls="contact" aria-selected="false">activity (10)</a>
+                                        </li>
+                                        <li class="nav-item ml-2">
+                                            <a class="nav-link text-dark p-1" id="mile-tab" data-toggle="tab" href="#reports" role="tab" aria-controls="contact" aria-selected="false">Reports (06)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="mr-2"><span class="material-icons bg-white text-dark">
+                                            person_outline
+                                        </span> 125 members</div>
+                                    <ul class="list-group list-group-horizontal-xl">
+                                        <li class="list-group-item p-2">
+                                            <span class="material-icons">
+                                                more_horiz
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-content mt-5" id="myTabContent">
+                                <div class="tab-pane fade show active" id="tasks" role="tabpanel" aria-labelledby="home-tab">
+                                    <nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0">
+                                        <span class="navbar-brand">
+                                            <h1>Tasks</h1>
+                                        </span>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <ul class="navbar-nav mr-auto">
+                                            </ul>
+                                            <form class="form-inline my-2 my-lg-0">
+                                                <input class="form-control mr-sm-2 p-3 rounded " type="search" placeholder="Search for tasks" aria-label="Search">
+                                            </form>
+                                            <ul class="list-group list-group-horizontal">
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <span class="material-icons bg-white text-dark">
+                                                        menu
+                                                    </span></li>
+                                                <li class="list-group-item d-flex align-items-center"><span class="material-icons bg-white text-dark">
+                                                        pause
+                                                    </span></li>
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <span class="material-icons bg-white text-dark">
+                                                        date_range
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group-horizontal ml-3 mr-3">
+                                                <li class="list-group-item d-flex align-items-center">
+                                                    <span class="material-icons bg-white text-dark">
+                                                        settings
+                                                    </span></li>
+                                            </ul>
+                                            <button type="button" class="btn btn-light btn-lg rounded mr-3">
+                                                + Add Group
+                                            </button>
+                                            <button type="button" class="btn btn-danger btn-lg rounded">
+                                                + Add Task
+                                            </button>
+                                        </div>
+                                    </nav>
+                                    <div class="d-flex mt-4 mb-4">
+                                        <ul class="list-group list-group-horizontal mr-auto">
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <span class="material-icons bg-white text-dark">
+                                                    star
+                                                </span> Status</li>
+                                            <li class="list-group-item d-flex align-items-center"><span class="material-icons bg-white text-dark">
+                                                    bar_chart
+                                                </span> Priority</li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <span class="material-icons bg-white text-dark">
+                                                    event_note
+                                                </span> Set due date
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <span class="material-icons bg-white text-warning">
+                                                    delete_outline
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <ul class="nav" role="tablist">
+                                                <li class="nav-item ml-2">
+                                                    <h4>
+                                                        <a class="nav-link text-primary p-1" href="#">4 Items selected</a>
+                                                    </h4>
+                                                </li>
+                                                <li class="nav-item ml-2">
+                                                    <h4>
+                                                        <a class="nav-link text-primary p-1" href="#">Select all (105)</a>
+                                                    </h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- table -->
+                                    <div class="card border-0 mb-3 mt-2">
+                                        <div class="table-responsive">
+                                            <table id="myTable" class="table table-bordered" cellspacing="0" width="100%">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th><input type="checkbox" id="selectall" /></th>
+                                                        <th onclick="sortTable(0)">Tasks</th>
+                                                        <th onclick="sortTable(1)">Owner</th>
+                                                        <th onclick="sortTable(2)">Due Date</th>
+                                                        <th onclick="sortTable(3)">Priority</th>
+                                                        <th onclick="sortTable(4)">Status</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="7">
+                                                            <div class="d-flex">
+                                                                <h4 class="mr-auto text-dark">Group 1</h4>
+                                                                <h5 class="text-primary">+ Add Task</h5>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><input type="checkbox" class="selectedId" name="selectedId" /></th>
+                                                        <td>Filters Issue Fixing</td>
+                                                        <td>Carl Webb</td>
+                                                        <td>September 03, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Medium
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Ongoing
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><input type="checkbox" class="selectedId" name="selectedId" /></th>
+                                                        <td>
+                                                            Date picker issues</td>
+                                                        <td>Maria Cruz</td>
+                                                        <td>September 12, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-warning d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                High
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-warning d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Overdue
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><input type="checkbox" class="selectedId" name="selectedId" /></th>
+                                                        <td>
+                                                            UI issues fixing</td>
+                                                        <td>Karen Jackson</td>
+                                                        <td>September 23, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-secondary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Low
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-success d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Completed
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="7">
+                                                            <div class="d-flex">
+                                                                <h4 class="mr-auto text-dark">Group 2</h4>
+                                                                <h5 class="text-primary">+ Add Task</h5>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><input type="checkbox" class="selectedId" name="selectedId" /></th>
+                                                        <td>Paytm Payment Process</td>
+                                                        <td>Julie Fisher</td>
+                                                        <td>December 03, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-secondary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Low
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-warning d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Overdue
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th><input type="checkbox" class="selectedId" name="selectedId" /></th>
+                                                        <td>Paytm Payment Process</td>
+                                                        <td>Emma Oliver</td>
+                                                        <td>December 21, 2019</td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Medium
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="alert alert-primary d-inline-block p-1 pl-3 pr-3 border-0" role="alert">
+                                                                Ongoing
+                                                            </div>
+                                                        </td>
+                                                        <td><span class="material-icons">
+                                                                more_horiz
+                                                            </span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="discussions" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="tab-pane fade" id="files" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="tab-pane fade" id="milestones" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p> commodo consequat.</p>
+                                </div>
+                                <div class="tab-pane fade" id="activity" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p> Rud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="tab-pane fade" id="reports" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p> laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- nav -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script>
+    function sortTable(n) {
+        var table,
+            rows,
+            switching,
+            i,
+            x,
+            y,
+            shouldSwitch,
+            dir,
+            switchcount = 0;
+        table = document.getElementById("myTable");
+        switching = true;
+        //Set the sorting direction to ascending:
+        dir = "asc";
+        /*Make a loop that will continue until
+        no switching has been done:*/
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table.getElementsByTagName("TR");
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i = 1; i < rows.length - 1; i++) { //Change i=0 if you have the header th a separate table.
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /*check if the two rows should switch place,
+                based on the direction, asc or desc:*/
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        //if so, mark as a switch and break the loop:
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                //Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /*If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again.*/
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+
+    $(document).ready(function() {
+
+        $('#selectall').click(function() {
+            $('.selectedId').prop('checked', this.checked);
+        });
+
+        $('.selectedId').change(function() {
+            var check = ($('.selectedId').filter(":checked").length == $('.selectedId').length);
+            $('#selectall').prop("checked", check);
+        });
+
+
+
+        $('#carousel-1').carousel({
+            interval: 4000,
+            wrap: true,
+            keyboard: true
+        });
+
+
+        /* 2 carousel */
+        $('#carousel-2').carousel({
+            interval: 6000,
+            wrap: true,
+            keyboard: true
+        });
+
+        /* 3 carousel */
+        $('#carousel-3').carousel({
+            interval: 6000,
+            wrap: true,
+            keyboard: true
+        });
+
+        $("#menu-toggle").click(function() {
+            $("#sidenav").toggleClass("active");
+            $(".body-mask").toggleClass("mask");
+        });
+
+        $("#menu-collapse").click(function() {
+            $("#sidenav").toggleClass("active");
+            $(".body-mask").toggleClass("mask");
+        });
+    });
+    </script>
+</body>
+
+</html>
